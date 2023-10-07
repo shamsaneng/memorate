@@ -7,7 +7,6 @@ import random
 from youtube_transcript_api import YouTubeTranscriptApi
 import random
 
-import keys
 
 ### State example
 # TODO: 

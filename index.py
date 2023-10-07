@@ -104,8 +104,8 @@ example_state = {
   "questions_rendered": True
 }
 
-openai.organization = keys.OPENAI_ORG
-openai.api_key = keys.OPENAI_KEY
+# openai.organization = keys.OPENAI_ORG
+openai.api_key = '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'
 
 ### Constants
 PROJECT_NAME = 'Memorate' # alt.: Memembered etc

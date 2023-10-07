@@ -122,7 +122,8 @@ OVERLAP_CHARS = 50 # how many characters before and after the segment should be 
 def get_openai_completion(prompt):
     print('\n\nOPENAI-PROMPT:', prompt)
     try:
-        res = openai.Completion.create(engine="text-davinci-003", prompt=prompt, max_tokens=400, temperature=0.1)
+      
+        res = openai.Completion.create(model="gpt-3.5-turbo", prompt=prompt, max_tokens=400, temperature=0.1)
         print('\n\nOPENAI-RESPONSE:', res)
         return res.choices[0]['text'] or None
     except Exception as e:
